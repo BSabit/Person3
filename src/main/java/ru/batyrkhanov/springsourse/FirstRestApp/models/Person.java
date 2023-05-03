@@ -30,7 +30,7 @@ public class Person {
 
     @Column(name = "hobby")
     @NotEmpty(message = "Введите хобби")
-    @Size(min = 2, max = 120, message = "Минимальное количество символов- 2, максимальное количество символов- 120")
+    @Size(min = 2, max = 100, message = "Минимальное количество символов- 2, максимальное количество символов- 100")
     private String hobby;
 
     @Column(updatable = false, name = "created_at")
